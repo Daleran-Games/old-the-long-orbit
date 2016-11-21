@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 namespace UnityEngine
@@ -40,6 +41,24 @@ namespace UnityEngine
             }
 
             return component;
+        }
+
+        public static Transform ClearChildren (this Transform transform)
+        {
+            foreach (Transform child in transform)
+            {
+                GameObject.Destroy(child.gameObject);
+            }
+            return transform;
+        }
+
+        public static RectTransform ClearChildren (this RectTransform rectTransform)
+        {
+            foreach (RectTransform child in rectTransform)
+            {
+                GameObject.Destroy(child.gameObject);
+            }
+            return rectTransform;
         }
     }
 }

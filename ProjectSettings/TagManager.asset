@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Planets
+    uniqueID: 2213087465
+    locked: 0
+  - name: Ships
+    uniqueID: 4064950061
+    locked: 0

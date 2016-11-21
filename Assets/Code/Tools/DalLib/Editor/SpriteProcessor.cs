@@ -16,7 +16,7 @@ namespace DalLib
             {
                 TextureImporter textureImporter = (TextureImporter)assetImporter;
                 textureImporter.textureType = TextureImporterType.Sprite;
-                textureImporter.spritePixelsPerUnit = 32f;
+                textureImporter.spritePixelsPerUnit = 1f;
                 textureImporter.filterMode = FilterMode.Point;
                 textureImporter.textureFormat = TextureImporterFormat.AutomaticTruecolor;
             }
