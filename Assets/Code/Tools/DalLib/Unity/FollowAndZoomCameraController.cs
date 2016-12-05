@@ -18,9 +18,9 @@ namespace DalLib
             offset = new Vector3(0f, 0f, -10f);
             cam = gameObject.GetRequiredComponent<Camera>();
             cam.orthographicSize = startZoom;
+            target = GameObject.FindGameObjectWithTag("Player");
 
         }
-
 
         void LateUpdate()
         {

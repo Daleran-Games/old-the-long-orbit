@@ -11,13 +11,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c269ebab29d2454d9f85179fd1f4db4, type: 3}
   m_Name: Tortise
   m_EditorClassIdentifier: 
-  ShipName: New Ship
-  ShipDescription: A new ship
+  ShipName: Tortise
+  ShipDescription: A old used shuttle used for ferrying passengers and cargo between
+    stations. This one has been heavily modified for longer journeys.
   ExteriorView: {fileID: 21300000, guid: 2ffb30713e2a2bc4fbd50296008b740b, type: 3}
   InteriorView: {fileID: 21300000, guid: fbfa71f936b36264684462cf7af8d107, type: 3}
   MaxFuel: 10
   MaxHealth: 100
   MaxSupplies: 10
   MaxMissles: 4
-  MaxSpeed: 10
-  Acceleration: 0
+  MaxSpeed: 20
+  Acceleration: 5

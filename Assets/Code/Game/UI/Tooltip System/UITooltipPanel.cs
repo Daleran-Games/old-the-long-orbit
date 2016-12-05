@@ -50,8 +50,8 @@ namespace TheLongOrbit
             foreach (TooltipEntry te in newTooltip.GetTooltipEntries())
             {
                 GameObject newEntry = (GameObject)Instantiate(TooltipEntryPrefab, tooltipEntriesParent);
-                newEntry.GetRequiredComponent<Text>().text = te.GetText();
-                newEntry.GetRequiredComponent<Text>().color = te.GetTextColor();
+                newEntry.GetRequiredComponent<Text>().text = te.Text;
+                newEntry.GetRequiredComponent<Text>().color = te.TextColor;
             }
             
         }

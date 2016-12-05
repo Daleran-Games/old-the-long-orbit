@@ -26,9 +26,7 @@ namespace TheLongOrbit
         void Awake()
         {
             LocationTooltip = new Tooltip(locationName, icon, new TooltipEntry(description));
-
-            if (gameObject.GetRequiredComponent<TooltipComponent>() != null)
-                gameObject.GetRequiredComponent<TooltipComponent>().SetTooltip(LocationTooltip);
+            gameObject.GetRequiredComponent<TooltipComponent>().SetTooltip(LocationTooltip);
 
         }
 
