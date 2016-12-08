@@ -18,8 +18,7 @@ namespace TheLongOrbit
         public int MaxHealth = 0;
         public int MaxSupplies = 0;
         public int MaxMissles = 0;
-        public float MaxSpeed = 0f;
-        public float Acceleration = 0f;
+        public float MaxAcceleration = 0f;
 
 
     }

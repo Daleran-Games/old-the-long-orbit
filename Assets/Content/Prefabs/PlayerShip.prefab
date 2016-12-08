@@ -16,13 +16,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000011867190086}
-  - 212: {fileID: 212000010275982998}
-  - 60: {fileID: 60000012780531368}
-  - 114: {fileID: 114000013916156244}
-  - 114: {fileID: 114000013245354962}
+  - component: {fileID: 4000011867190086}
+  - component: {fileID: 212000010275982998}
+  - component: {fileID: 60000012780531368}
+  - component: {fileID: 114000013916156244}
   m_Layer: 0
   m_Name: PlayerShip
   m_TagString: Player
@@ -39,10 +38,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1498, y: 52.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &60000012780531368
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -52,7 +51,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   m_Points:
@@ -69,22 +68,6 @@ PolygonCollider2D:
       - {x: 28.305542, y: -3.0947342}
       - {x: 28.280884, y: 3.855053}
       - {x: 19.659302, y: 8.010086}
---- !u!114 &114000013245354962
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013840307220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41d8731b79f7c574ab5888d94883a947, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tooltip:
-    icon: {fileID: 0}
-    header: 
-    tooltipEntries: []
-  tooltipActive: 0
 --- !u!114 &114000013916156244
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -96,23 +79,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8b011883de77a0448af2a3393365225, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerName: Daleran
-  PlayerShipType: {fileID: 11400000, guid: a9430e9430872e8408c96ab32fdbb42f, type: 2}
-  fuel: 0
-  health: 0
-  supplies: 0
-  missles: 0
-  speed: 0
-  acceleration: 0
-  currentLocation: {fileID: 0}
-  targetLocation: {fileID: 0}
+  captainName: NewCaptain
+  shipName: NewShip
+  shipDescription: A new ship
+  ExteriorView: {fileID: 0}
+  InteriorView: {fileID: 0}
   shipRenderer: {fileID: 0}
   shipCollider: {fileID: 0}
-  tooltipComp: {fileID: 0}
-  shipTooltip:
-    icon: {fileID: 0}
-    header: 
-    tooltipEntries: []
 --- !u!212 &212000010275982998
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -127,7 +100,9 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -135,7 +110,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 1
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89

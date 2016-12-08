@@ -22,9 +22,9 @@ namespace UnityEngine
         /// </summary>
         /// <returns>The emission rate.</returns>
         /// <param name="particleSystem">Particle system.</param>
-        public static float GetEmissionRate(this ParticleSystem particleSystem)
+        public static float GetEmissionRateOverTime(this ParticleSystem particleSystem)
         {
-            return particleSystem.emission.rate.constantMax;
+            return particleSystem.emission.rateOverTime.constantMax;
         }
 
         /// <summary>
@@ -32,12 +32,12 @@ namespace UnityEngine
         /// </summary>
         /// <param name="particleSystem">Particle system.</param>
         /// <param name="emissionRate">Emission rate.</param>
-        public static void SetEmissionRate(this ParticleSystem particleSystem, float emissionRate)
+        public static void SetEmissionRateOverTime(this ParticleSystem particleSystem, float emissionRate)
         {
             var emission = particleSystem.emission;
-            var rate = emission.rate;
+            var rate = emission.rateOverTime;
             rate.constantMax = emissionRate;
-            emission.rate = rate;
+            emission.rateOverTime = rate;
         }
     }
 

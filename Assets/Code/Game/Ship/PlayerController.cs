@@ -9,12 +9,12 @@ namespace TheLongOrbit
 
 
         [ReadOnly]
-        private PlayerShip playerShip;
+        private Ship playerShip;
 
         // Use this for initialization
         void Start()
         {
-            playerShip = gameObject.GetRequiredComponent<PlayerShip>();
+            playerShip = gameObject.GetRequiredComponent<Ship>();
         }
 
         // Update is called once per frame

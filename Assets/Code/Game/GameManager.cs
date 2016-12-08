@@ -8,7 +8,7 @@ namespace TheLongOrbit
     {
         protected GameManager() { }
 
-        public Location StartingLocation;
+        public Planet StartingLocation;
         public GameObject PlayerPrefab;
 
         private GameObject PlayerObject;

@@ -61,7 +61,7 @@ public class AnalyzeStars : MonoBehaviour {
                                                     float.Parse(components[3]),
                                                     float.Parse(components[2])).normalized * Camera.main.farClipPlane * 0.9f;
             
-            particleStars[i].lifetime = Mathf.Infinity;
+            particleStars[i].remainingLifetime = Mathf.Infinity;
             particleStars[i].startColor = Color.white * (1.0f - ((float.Parse(components[0]) + 1.44f) / 8));
         }
 

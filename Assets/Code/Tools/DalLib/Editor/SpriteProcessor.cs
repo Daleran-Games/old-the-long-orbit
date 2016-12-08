@@ -6,7 +6,7 @@ namespace DalLib
 {
     public class SpriteProcessor : AssetPostprocessor
     {
-
+        /*
         void OnPostprocessTexture(Texture2D texture)
         {
             string lowerCaseAssetPath = assetPath.ToLower();
@@ -19,8 +19,10 @@ namespace DalLib
                 textureImporter.spritePixelsPerUnit = 1f;
                 textureImporter.filterMode = FilterMode.Point;
                 textureImporter.textureFormat = TextureImporterFormat.AutomaticTruecolor;
+
             }
         }
+            */
     }
 }
 
