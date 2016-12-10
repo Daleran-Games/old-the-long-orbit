@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace TheLongOrbit
 {
+    [System.Serializable]
     public class AccelerationBurnState : NavigationState
     {
         public AccelerationBurnState(NavigationModule nav)
@@ -29,9 +30,9 @@ namespace TheLongOrbit
         public override string GetStateDescription()
         {
             if (navModule.GetCurrentLocation() == null)
-                return "Accelerating towards " + navModule.GetDestination() + ".";
+                return "Accelerating towards " + navModule.GetDestination().GetNavBeaconName() + ".";
             else
-                return "ERROR: Manuvering at location";
+                return "ERROR: Accelerating at location";
         }
     }
 }

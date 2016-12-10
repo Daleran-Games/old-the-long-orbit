@@ -4,16 +4,34 @@ using System;
 
 namespace TheLongOrbit
 {
-    public class Planet : Location
+    public class Planet : MonoBehaviour, INameable, IDescribable
     {
 
-        // Use this for initialization
-        void Awake()
+        [SerializeField]
+        private string planetName = "Default Location";
+        [SerializeField]
+        [TextArea]
+        private string description = "Default Location Description";
+          [SerializeField]
+        private int tooltipPriority = 1;
+
+
+        public string GetObjectName()
         {
-
-
+            return planetName;
         }
 
+        public string GetRichTextBasicInfo()
+        {
+            string head = UIManager.Instance.Style.Heading.ApplyTextSyle(planetName);
+            string foot = UIManager.Instance.Style.Footnote.ApplyTextSyle(description);
 
+            return head + Environment.NewLine + foot;
+        }
+
+        public int GetPriority()
+        {
+            return tooltipPriority;
+        }
     }
 }

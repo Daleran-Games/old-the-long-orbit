@@ -3,7 +3,21 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Canvas
+  - DraggingItem
+  - Item
+  - ItemIcon
+  - EventSystem
+  - CraftSystem
+  - Panel
+  - Slots
+  - ResultSlot
+  - Slot
+  - EquipmentSystem
+  - Hotbar
+  - Tooltip
+  - SelectionCamera
   layers:
   - Default
   - TransparentFX

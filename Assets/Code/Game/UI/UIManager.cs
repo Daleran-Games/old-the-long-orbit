@@ -10,32 +10,49 @@ namespace TheLongOrbit
 
         protected UIManager () { }
 
+        public UIStyle Style;
         [SerializeField]
         private GameObject tooltipPrefab;
+        [SerializeField]
+        private GameObject selectionPanelPrefab;
+        [SerializeField]
+        private Camera targetingCamera;
+        [ReadOnly]
+        [SerializeField]
+        private bool uiTooltipLock = false;
 
-        private GameObject tooltipObject;
-        private UITooltipPanel tooltipScript;
 
-        void Awake ()
+        private GameObject gameTooltip;
+        private TooltipPanelView gameTooltipView;
+
+        private GameObject uiTooltip;
+        private TooltipPanelView uiTooltipView;
+
+        private GameObject selectionPanel;
+        private SelectionPanelView selectionView;
+
+        void Start ()
         {
-            
-            tooltipObject = (GameObject) Instantiate(tooltipPrefab, this.transform.parent);
-            tooltipScript = tooltipObject.GetRequiredComponent<UITooltipPanel>();
-            tooltipObject.SetActive(false);
+            InstantiateGameTooltip();
         }
 
-        public void ShowTooltip (Vector2 location, Tooltip tooltip)
+        void InstantiateGameTooltip()
         {
-            tooltipObject.SetActive(true);
-            tooltipScript.GenerateTooltip(tooltip);
-            tooltipScript.MoveToPosition(location);
+            gameTooltip = (GameObject) Instantiate(tooltipPrefab, transform);
+            gameTooltipView = gameTooltip.GetRequiredComponent<TooltipPanelView>();
+            gameTooltip.SetActive(false);
         }
 
-        public void HideTooltip ()
+        public void ShowGameTooltip (ShowTooltip tooltip)
         {
-            tooltipScript.ClearEntries();
-            tooltipObject.SetActive(false);
+            gameTooltipView.Show(tooltip);
         }
+
+        public void HideGameTooltip ()
+        {
+            gameTooltipView.Hide();
+        }
+
 
     }
 

@@ -60,6 +60,14 @@ namespace UnityEngine
             }
             return rectTransform;
         }
+
+        public static Vector3 WorldToCanvasPoint (this Camera camera, RectTransform canvasRect ,Vector3 objectPosition)
+        {
+            Vector3 screenPos = camera.WorldToViewportPoint(objectPosition);
+            screenPos.x *= canvasRect.rect.width;
+            screenPos.y *= canvasRect.rect.height;
+            return screenPos;
+        }
     }
 }
 

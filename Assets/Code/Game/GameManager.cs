@@ -8,26 +8,27 @@ namespace TheLongOrbit
     {
         protected GameManager() { }
 
-        public Planet StartingLocation;
-        public GameObject PlayerPrefab;
+        public NavBeacon StartingPlanet;
+        public GameObject PlayerObject;
 
-        private GameObject PlayerObject;
+        [ReadOnly]
+        [SerializeField]
+        private NavigationModule shipNavModule;
 
         void Awake ()
         {
-            PlayerObject = Instantiate(PlayerPrefab);
+            shipNavModule = PlayerObject.GetRequiredComponent<NavigationModule>();
         }
 
         // Use this for initialization
         void Start()
         {
-            
+            shipNavModule.Teleport(StartingPlanet);
         }
 
         // Update is called once per frame
         void Update()
         {
-
         }
 
         public void SaveToDisk ()

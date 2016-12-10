@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace TheLongOrbit
 {
+    [System.Serializable]
     public class DecelerationManeuverState : NavigationState
     {
         public DecelerationManeuverState(NavigationModule nav)
@@ -29,9 +30,9 @@ namespace TheLongOrbit
         public override string GetStateDescription()
         {
             if (navModule.GetCurrentLocation() == null)
-                return "Manuvering for deceleration burn to " + navModule.GetDestination() + ".";
+                return "Manuvering for deceleration burn to " + navModule.GetDestination().GetNavBeaconName() + ".";
             else
-                return "ERROR: Manuvering at location";
+                return "ERROR: Decelration maneuver at location";
         }
 
     }

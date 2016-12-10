@@ -5,16 +5,16 @@ using System;
 namespace TheLongOrbit
 {
     [RequireComponent(typeof(SpriteRenderer))]
-    public class Ship : MonoBehaviour
+    public class Ship : MonoBehaviour, INameable, IDescribable
     {
         [Header("Ship Info")]
-        [SerializeField]
-        private string captainName = "NewCaptain";
         [SerializeField]
         private string shipName = "NewShip";
         [TextArea]
         [SerializeField]
         private string shipDescription = "A new ship";
+        [SerializeField]
+        private int tooltipPriority = 2;
 
         [Header("Ship Graphics")]
         [SerializeField]
@@ -40,7 +40,7 @@ namespace TheLongOrbit
         // Use this for initialization
         void Start()
         {
-            transform.position = GameManager.Instance.StartingLocation.GetOrbitPosition();
+            transform.position = GameManager.Instance.StartingPlanet.GetOrbitPosition();
             shipRenderer.sprite = ExteriorView;
         }
 
@@ -50,35 +50,23 @@ namespace TheLongOrbit
 
         }
 
-        void FixedUpdate ()
+        public string GetObjectName()
         {
-            /*
-            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-
-            if (hit.collider != null)
-            {
-
-                if (hit.collider.gameObject.GetComponent<Planet>() != null)
-                {
-                    targetLocation = hit.collider.gameObject.GetComponent<Planet>();
-                }
-            }
-
-            if (targetLocation != null)
-            {
-                if (transform.position == targetLocation.GetOrbitPosition())
-                {
-                    currentLocation = targetLocation;
-                    targetLocation = null;
-                }
-                else
-                {
-                    this.transform.Translate(targetLocation.GetOrbitPosition() * Time.deltaTime);
-                }
-            }
-            */
+            return shipName;
         }
 
+        public string GetRichTextBasicInfo()
+        {
+            string head = UIManager.Instance.Style.Subheading.ApplyTextSyle(shipName + " Class Ship");
+            string foot = UIManager.Instance.Style.Footnote.ApplyTextSyle(shipDescription);
+
+            return head + Environment.NewLine + foot;
+        }
+
+        public int GetPriority()
+        {
+            return tooltipPriority;
+        }
     }
 }
 

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Linq;
 
 namespace UnityEngine
 {
@@ -24,6 +25,18 @@ namespace UnityEngine
         {
             return new Vector2Int(Mathf.RoundToInt(v.x), Mathf.RoundToInt(v.y));
 
+        }
+
+        public static float GetMaxAbsoluteDimmension(Vector3 vec)
+        {
+            float[] dims = { Mathf.Abs(vec.x), Mathf.Abs(vec.y), Mathf.Abs(vec.z) };
+            return dims.Max();
+        }
+
+        public static float GetMinAbsoluteDimmension(Vector3 vec)
+        {
+            float[] dims = { Mathf.Abs(vec.x), Mathf.Abs(vec.y), Mathf.Abs(vec.z) };
+            return dims.Min();
         }
     }
 }

@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 212000010275982998}
   - component: {fileID: 60000012780531368}
   - component: {fileID: 114000013916156244}
+  - component: {fileID: 50974938262968552}
+  - component: {fileID: 114360615533733952}
   m_Layer: 0
   m_Name: PlayerShip
   m_TagString: Player
@@ -36,12 +38,32 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013840307220}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1498, y: 52.2, z: 0}
+  m_LocalPosition: {x: 1496, y: 52, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50974938262968552
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013840307220}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!60 &60000012780531368
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -79,13 +101,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8b011883de77a0448af2a3393365225, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  captainName: NewCaptain
-  shipName: NewShip
-  shipDescription: A new ship
-  ExteriorView: {fileID: 0}
-  InteriorView: {fileID: 0}
+  captainName: Daleran
+  shipName: Tortise
+  shipDescription: This is a simple ship.
+  ExteriorView: {fileID: 21300000, guid: 2ffb30713e2a2bc4fbd50296008b740b, type: 3}
+  InteriorView: {fileID: 21300000, guid: fbfa71f936b36264684462cf7af8d107, type: 3}
   shipRenderer: {fileID: 0}
   shipCollider: {fileID: 0}
+--- !u!114 &114360615533733952
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013840307220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eb90ec071ecdc047b9ba8ec4d01e329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  turningSpeed: 1
+  acceleration: 0
+  maxAcceleration: 5
+  positionErrorTolerance: 2
+  headingErrorTolerance: 1
+  currentLocationText: 
+  destinationText: 
+  distanceToDestination: 0
+  navRigidBody: {fileID: 0}
+  movementVector: {x: 0, y: 0, z: 0}
+  stateText: 
 --- !u!212 &212000010275982998
 SpriteRenderer:
   m_ObjectHideFlags: 1

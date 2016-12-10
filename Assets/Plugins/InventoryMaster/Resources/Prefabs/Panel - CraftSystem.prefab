@@ -5,11 +5,11 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 22471392}
-  - 222: {fileID: 22271394}
-  - 114: {fileID: 11471386}
+  - component: {fileID: 22471392}
+  - component: {fileID: 22271394}
+  - component: {fileID: 11471386}
   m_Layer: 0
   m_Name: 9
   m_TagString: Slot
@@ -22,11 +22,11 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 22471394}
-  - 222: {fileID: 22271396}
-  - 114: {fileID: 11471388}
+  - component: {fileID: 22471394}
+  - component: {fileID: 22271396}
+  - component: {fileID: 11471388}
   m_Layer: 0
   m_Name: 8
   m_TagString: Slot
@@ -39,11 +39,11 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 22471396}
-  - 222: {fileID: 22271398}
-  - 114: {fileID: 11471390}
+  - component: {fileID: 22471396}
+  - component: {fileID: 22271398}
+  - component: {fileID: 11471390}
   m_Layer: 0
   m_Name: 7
   m_TagString: Slot
@@ -56,11 +56,11 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 22471398}
-  - 222: {fileID: 22271400}
-  - 114: {fileID: 11471392}
+  - component: {fileID: 22471398}
+  - component: {fileID: 22271400}
+  - component: {fileID: 11471392}
   m_Layer: 0
   m_Name: 6
   m_TagString: Slot
@@ -73,11 +73,11 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 22471400}
-  - 222: {fileID: 22271402}
-  - 114: {fileID: 11471394}
+  - component: {fileID: 22471400}
+  - component: {fileID: 22271402}
+  - component: {fileID: 11471394}
   m_Layer: 0
   m_Name: 5
   m_TagString: Slot
@@ -90,11 +90,11 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 22471402}
-  - 222: {fileID: 22271404}
-  - 114: {fileID: 11471396}
+  - component: {fileID: 22471402}
+  - component: {fileID: 22271404}
+  - component: {fileID: 11471396}
   m_Layer: 0
   m_Name: 4
   m_TagString: Slot
@@ -107,11 +107,11 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 22471404}
-  - 222: {fileID: 22271406}
-  - 114: {fileID: 11471398}
+  - component: {fileID: 22471404}
+  - component: {fileID: 22271406}
+  - component: {fileID: 11471398}
   m_Layer: 0
   m_Name: 3
   m_TagString: Slot
@@ -124,11 +124,11 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 22471406}
-  - 222: {fileID: 22271408}
-  - 114: {fileID: 11471400}
+  - component: {fileID: 22471406}
+  - component: {fileID: 22271408}
+  - component: {fileID: 11471400}
   m_Layer: 0
   m_Name: 2
   m_TagString: Slot
@@ -141,11 +141,11 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 22471408}
-  - 222: {fileID: 22271410}
-  - 114: {fileID: 11471402}
+  - component: {fileID: 22471408}
+  - component: {fileID: 22271410}
+  - component: {fileID: 11471402}
   m_Layer: 0
   m_Name: 1
   m_TagString: Slot
@@ -158,10 +158,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 22471410}
-  - 114: {fileID: 11471404}
+  - component: {fileID: 22471410}
+  - component: {fileID: 11471404}
   m_Layer: 0
   m_Name: Slots - Inventory(Clone)
   m_TagString: Slots
@@ -174,12 +174,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 22471412}
-  - 222: {fileID: 22271412}
-  - 114: {fileID: 11471406}
-  - 114: {fileID: 11471408}
+  - component: {fileID: 22471412}
+  - component: {fileID: 22271412}
+  - component: {fileID: 11471406}
+  - component: {fileID: 11471408}
   m_Layer: 0
   m_Name: Title - Inventory
   m_TagString: Untagged
@@ -192,13 +192,13 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 22471414}
-  - 222: {fileID: 22271414}
-  - 114: {fileID: 11471414}
-  - 114: {fileID: 11471412}
-  - 114: {fileID: 11471410}
+  - component: {fileID: 22471414}
+  - component: {fileID: 22271414}
+  - component: {fileID: 11471414}
+  - component: {fileID: 11471412}
+  - component: {fileID: 11471410}
   m_Layer: 0
   m_Name: Panel - CraftSystem
   m_TagString: CraftSystem
@@ -211,12 +211,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 22471416}
-  - 222: {fileID: 22271416}
-  - 114: {fileID: 11471416}
-  - 114: {fileID: 11488100}
+  - component: {fileID: 22471416}
+  - component: {fileID: 22271416}
+  - component: {fileID: 11471416}
+  - component: {fileID: 11488100}
   m_Layer: 0
   m_Name: ResultSlot - CraftSystem
   m_TagString: ResultSlot
@@ -229,12 +229,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 22471418}
-  - 222: {fileID: 22271418}
-  - 114: {fileID: 11471418}
-  - 114: {fileID: 11499880}
+  - component: {fileID: 22471418}
+  - component: {fileID: 22271418}
+  - component: {fileID: 11471418}
+  - component: {fileID: 11499880}
   m_Layer: 0
   m_Name: LeftArrow
   m_TagString: Untagged
@@ -247,12 +247,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 22471420}
-  - 222: {fileID: 22271420}
-  - 114: {fileID: 11471420}
-  - 114: {fileID: 11425166}
+  - component: {fileID: 22471420}
+  - component: {fileID: 22271420}
+  - component: {fileID: 11471420}
+  - component: {fileID: 11425166}
   m_Layer: 0
   m_Name: RightArrow
   m_TagString: Untagged
@@ -265,11 +265,11 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 22479140}
-  - 222: {fileID: 22279140}
-  - 114: {fileID: 11479140}
+  - component: {fileID: 22479140}
+  - component: {fileID: 22279140}
+  - component: {fileID: 11479140}
   m_Layer: 0
   m_Name: CloseInventory
   m_TagString: Untagged
@@ -282,12 +282,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 22479142}
-  - 222: {fileID: 22279142}
-  - 114: {fileID: 11479142}
-  - 114: {fileID: 11478410}
+  - component: {fileID: 22479142}
+  - component: {fileID: 22279142}
+  - component: {fileID: 11479142}
+  - component: {fileID: 11478410}
   m_Layer: 0
   m_Name: CloseInventory
   m_TagString: Untagged
@@ -635,7 +635,7 @@ MonoBehaviour:
   inventoryCrossRectTransform: {fileID: 22479142}
   inventoryCrossPosX: 0
   inventoryCrossPosY: 0
-  inventoryTitle: 437261667453797374656d
+  inventoryTitle: CraftSystem
   inventoryTitleText: {fileID: 11471406}
   inventoryTitlePosX: 0
   inventoryTitlePosY: 171
@@ -670,612 +670,7 @@ MonoBehaviour:
   SlotGridLayout: {fileID: 11471404}
   SlotGridRectTransform: {fileID: 22471410}
   mainInventory: 0
-  ItemsInInventory:
-  - itemName: 4368657374
-    itemID: 2
-    itemDesc: 5468697320697320612076657279206e6963652063686573742e0a0a2b31302041726d6f72
-    itemIcon: {fileID: 21300000, guid: fcd8bd2db18e92d42a7d14fc0e395888, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 6
-    itemWeight: 0
-    maxStack: 1
-    indexItemInList: 0
-    itemAttributes: []
-  - itemName: 4368657374
-    itemID: 2
-    itemDesc: 5468697320697320612076657279206e6963652063686573742e0a0a2b31302041726d6f72
-    itemIcon: {fileID: 21300000, guid: fcd8bd2db18e92d42a7d14fc0e395888, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 6
-    itemWeight: 0
-    maxStack: 1
-    indexItemInList: 1
-    itemAttributes: []
-  - itemName: 4348455354493333
-    itemID: 5
-    itemDesc: 
-    itemIcon: {fileID: 21300000, guid: 34ce9c8524e37f549bc4de2bbdd96429, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 6
-    itemWeight: 0
-    maxStack: 1
-    indexItemInList: 2
-    itemAttributes: []
-  - itemName: 434845535449
-    itemID: 4
-    itemDesc: 
-    itemIcon: {fileID: 21300000, guid: 94feb6ac7e57fb34bb8d8f48f554ff82, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 6
-    itemWeight: 0
-    maxStack: 1
-    indexItemInList: 3
-    itemAttributes: []
-  - itemName: 426f74746c65
-    itemID: 1
-    itemDesc: 496620796f75206472696e6b2074686973206e69636520626f74746c6520796f752077696c6c2067657420736f6d65206865616c7468206261636b2e0a0a2b203230204865616c7468
-    itemIcon: {fileID: 21300000, guid: 325a3dd7a93355d4e91d76fda74ca99f, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 0
-    itemWeight: 0
-    maxStack: 50
-    indexItemInList: 4
-    itemAttributes: []
-  - itemName: 426f74746c65
-    itemID: 1
-    itemDesc: 496620796f75206472696e6b2074686973206e69636520626f74746c6520796f752077696c6c2067657420736f6d65206865616c7468206261636b2e0a0a2b203230204865616c7468
-    itemIcon: {fileID: 21300000, guid: 325a3dd7a93355d4e91d76fda74ca99f, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 20
-    itemType: 0
-    itemWeight: 0
-    maxStack: 50
-    indexItemInList: 5
-    itemAttributes: []
-  - itemName: 4850204472696e6b
-    itemID: 6
-    itemDesc: 2b203130204865616c7468
-    itemIcon: {fileID: 21300000, guid: 6dc5762501dd2df4da399f6c16a85907, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 6
-    itemAttributes: []
-  - itemName: 4850204472696e6b
-    itemID: 6
-    itemDesc: 2b203130204865616c7468
-    itemIcon: {fileID: 21300000, guid: 6dc5762501dd2df4da399f6c16a85907, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 7
-    itemAttributes: []
-  - itemName: 4850204472696e6b
-    itemID: 6
-    itemDesc: 2b203130204865616c7468
-    itemIcon: {fileID: 21300000, guid: 6dc5762501dd2df4da399f6c16a85907, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 5
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 8
-    itemAttributes: []
-  - itemName: 4850204472696e6b
-    itemID: 6
-    itemDesc: 2b203130204865616c7468
-    itemIcon: {fileID: 21300000, guid: 6dc5762501dd2df4da399f6c16a85907, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 3
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 9
-    itemAttributes: []
-  - itemName: 4850204472696e6b
-    itemID: 6
-    itemDesc: 2b203130204865616c7468
-    itemIcon: {fileID: 21300000, guid: 6dc5762501dd2df4da399f6c16a85907, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 2
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 10
-    itemAttributes: []
-  - itemName: 485020426f74746c65
-    itemID: 7
-    itemDesc: 2b3130204850
-    itemIcon: {fileID: 21300000, guid: abcf74e1d10656842af1b13cefdfbe23, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 2
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 11
-    itemAttributes: []
-  - itemName: 485020426f74746c65
-    itemID: 7
-    itemDesc: 2b3130204850
-    itemIcon: {fileID: 21300000, guid: abcf74e1d10656842af1b13cefdfbe23, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 3
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 12
-    itemAttributes: []
-  - itemName: 485020426f74746c65
-    itemID: 7
-    itemDesc: 2b3130204850
-    itemIcon: {fileID: 21300000, guid: abcf74e1d10656842af1b13cefdfbe23, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 13
-    itemAttributes: []
-  - itemName: 485020426f74746c65
-    itemID: 7
-    itemDesc: 2b3130204850
-    itemIcon: {fileID: 21300000, guid: abcf74e1d10656842af1b13cefdfbe23, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 4
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 14
-    itemAttributes: []
-  - itemName: 
-    itemID: 0
-    itemDesc: 
-    itemIcon: {fileID: 0}
-    itemModel: {fileID: 0}
-    itemValue: 1
-    itemType: 0
-    itemWeight: 0
-    maxStack: 1
-    indexItemInList: 999
-    itemAttributes: []
-  - itemName: 
-    itemID: 0
-    itemDesc: 
-    itemIcon: {fileID: 0}
-    itemModel: {fileID: 0}
-    itemValue: 1
-    itemType: 0
-    itemWeight: 0
-    maxStack: 1
-    indexItemInList: 999
-    itemAttributes: []
-  - itemName: 
-    itemID: 0
-    itemDesc: 
-    itemIcon: {fileID: 0}
-    itemModel: {fileID: 0}
-    itemValue: 1
-    itemType: 0
-    itemWeight: 0
-    maxStack: 1
-    indexItemInList: 999
-    itemAttributes: []
-  - itemName: 
-    itemID: 0
-    itemDesc: 
-    itemIcon: {fileID: 0}
-    itemModel: {fileID: 0}
-    itemValue: 1
-    itemType: 0
-    itemWeight: 0
-    maxStack: 1
-    indexItemInList: 999
-    itemAttributes: []
-  - itemName: 
-    itemID: 0
-    itemDesc: 
-    itemIcon: {fileID: 0}
-    itemModel: {fileID: 0}
-    itemValue: 1
-    itemType: 0
-    itemWeight: 0
-    maxStack: 1
-    indexItemInList: 999
-    itemAttributes: []
-  - itemName: 
-    itemID: 0
-    itemDesc: 
-    itemIcon: {fileID: 0}
-    itemModel: {fileID: 0}
-    itemValue: 1
-    itemType: 0
-    itemWeight: 0
-    maxStack: 1
-    indexItemInList: 999
-    itemAttributes: []
-  - itemName: 4850204472696e6b
-    itemID: 6
-    itemDesc: 2b203130204865616c7468
-    itemIcon: {fileID: 21300000, guid: 6dc5762501dd2df4da399f6c16a85907, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 21
-    itemAttributes: []
-  - itemName: 4850204472696e6b
-    itemID: 6
-    itemDesc: 2b203130204865616c7468
-    itemIcon: {fileID: 21300000, guid: 6dc5762501dd2df4da399f6c16a85907, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 22
-    itemAttributes: []
-  - itemName: 4850
-    itemID: 7
-    itemDesc: 2b3130204865616c7468
-    itemIcon: {fileID: 21300000, guid: 98098aa1ea4ae684d87b3c8eeb3d8f98, type: 3}
-    itemModel: {fileID: 0}
-    itemValue: 3
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 23
-    itemAttributes: []
-  - itemName: 4170706c65
-    itemID: 8
-    itemDesc: 2b3130204865616c7468
-    itemIcon: {fileID: 21300000, guid: a4d3f378d1a88f346af15ee906321f2a, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 3
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 24
-    itemAttributes: []
-  - itemName: 4170706c65
-    itemID: 8
-    itemDesc: 2b3130204865616c7468
-    itemIcon: {fileID: 21300000, guid: a4d3f378d1a88f346af15ee906321f2a, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 2
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 25
-    itemAttributes: []
-  - itemName: 4170706c65
-    itemID: 8
-    itemDesc: 2b3130204865616c7468
-    itemIcon: {fileID: 21300000, guid: a4d3f378d1a88f346af15ee906321f2a, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 26
-    itemAttributes: []
-  - itemName: 4170706c65
-    itemID: 8
-    itemDesc: 2b3130204865616c7468
-    itemIcon: {fileID: 21300000, guid: a4d3f378d1a88f346af15ee906321f2a, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 4
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 27
-    itemAttributes: []
-  - itemName: 4850204472696e6b
-    itemID: 6
-    itemDesc: 2b203130204865616c7468
-    itemIcon: {fileID: 21300000, guid: 6dc5762501dd2df4da399f6c16a85907, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 28
-    itemAttributes: []
-  - itemName: 4850204472696e6b
-    itemID: 6
-    itemDesc: 2b203130204865616c7468
-    itemIcon: {fileID: 21300000, guid: 6dc5762501dd2df4da399f6c16a85907, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 29
-    itemAttributes: []
-  - itemName: 4850204472696e6b
-    itemID: 6
-    itemDesc: 2b203130204865616c7468
-    itemIcon: {fileID: 21300000, guid: 6dc5762501dd2df4da399f6c16a85907, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 30
-    itemAttributes: []
-  - itemName: 4850204472696e6b
-    itemID: 6
-    itemDesc: 2b203130204865616c7468
-    itemIcon: {fileID: 21300000, guid: 6dc5762501dd2df4da399f6c16a85907, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 31
-    itemAttributes: []
-  - itemName: 4850204472696e6b
-    itemID: 6
-    itemDesc: 2b203130204865616c7468
-    itemIcon: {fileID: 21300000, guid: 6dc5762501dd2df4da399f6c16a85907, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 32
-    itemAttributes: []
-  - itemName: 4850204472696e6b
-    itemID: 6
-    itemDesc: 2b203130204865616c7468
-    itemIcon: {fileID: 21300000, guid: 6dc5762501dd2df4da399f6c16a85907, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 33
-    itemAttributes: []
-  - itemName: 4850204472696e6b
-    itemID: 6
-    itemDesc: 2b203130204865616c7468
-    itemIcon: {fileID: 21300000, guid: 6dc5762501dd2df4da399f6c16a85907, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 999
-    itemAttributes: []
-  - itemName: 4850204472696e6b
-    itemID: 6
-    itemDesc: 2b203130204865616c7468
-    itemIcon: {fileID: 21300000, guid: 6dc5762501dd2df4da399f6c16a85907, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 999
-    itemAttributes: []
-  - itemName: 4850204472696e6b
-    itemID: 6
-    itemDesc: 2b203130204865616c7468
-    itemIcon: {fileID: 21300000, guid: 6dc5762501dd2df4da399f6c16a85907, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 999
-    itemAttributes: []
-  - itemName: 4850204472696e6b
-    itemID: 6
-    itemDesc: 2b203130204865616c7468
-    itemIcon: {fileID: 21300000, guid: 6dc5762501dd2df4da399f6c16a85907, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 999
-    itemAttributes: []
-  - itemName: 4170706c65
-    itemID: 8
-    itemDesc: 2b3130204865616c7468
-    itemIcon: {fileID: 21300000, guid: a4d3f378d1a88f346af15ee906321f2a, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 38
-    itemAttributes: []
-  - itemName: 4170706c65
-    itemID: 8
-    itemDesc: 2b3130204865616c7468
-    itemIcon: {fileID: 21300000, guid: a4d3f378d1a88f346af15ee906321f2a, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 39
-    itemAttributes: []
-  - itemName: 4170706c65
-    itemID: 8
-    itemDesc: 2b3130204865616c7468
-    itemIcon: {fileID: 21300000, guid: a4d3f378d1a88f346af15ee906321f2a, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 3
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 40
-    itemAttributes: []
-  - itemName: 4170706c65
-    itemID: 8
-    itemDesc: 2b3130204865616c7468
-    itemIcon: {fileID: 21300000, guid: a4d3f378d1a88f346af15ee906321f2a, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 41
-    itemAttributes: []
-  - itemName: 4170706c65
-    itemID: 8
-    itemDesc: 2b3130204865616c7468
-    itemIcon: {fileID: 21300000, guid: a4d3f378d1a88f346af15ee906321f2a, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 4
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 42
-    itemAttributes: []
-  - itemName: 426f74746c65
-    itemID: 1
-    itemDesc: 496620796f75206472696e6b2074686973206e69636520626f74746c6520796f752077696c6c2067657420736f6d65206865616c7468206261636b2e0a0a2b203230204865616c7468
-    itemIcon: {fileID: 21300000, guid: 325a3dd7a93355d4e91d76fda74ca99f, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 0
-    itemWeight: 0
-    maxStack: 50
-    indexItemInList: 43
-    itemAttributes: []
-  - itemName: 426f74746c65
-    itemID: 1
-    itemDesc: 496620796f75206472696e6b2074686973206e69636520626f74746c6520796f752077696c6c2067657420736f6d65206865616c7468206261636b2e0a0a2b203230204865616c7468
-    itemIcon: {fileID: 21300000, guid: 325a3dd7a93355d4e91d76fda74ca99f, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 0
-    itemWeight: 0
-    maxStack: 50
-    indexItemInList: 44
-    itemAttributes: []
-  - itemName: 426f74746c65
-    itemID: 1
-    itemDesc: 496620796f75206472696e6b2074686973206e69636520626f74746c6520796f752077696c6c2067657420736f6d65206865616c7468206261636b2e0a0a2b203230204865616c7468
-    itemIcon: {fileID: 21300000, guid: 325a3dd7a93355d4e91d76fda74ca99f, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 0
-    itemWeight: 0
-    maxStack: 50
-    indexItemInList: 45
-    itemAttributes: []
-  - itemName: 4348455354493333
-    itemID: 5
-    itemDesc: 
-    itemIcon: {fileID: 21300000, guid: 34ce9c8524e37f549bc4de2bbdd96429, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 1
-    itemType: 6
-    itemWeight: 0
-    maxStack: 1
-    indexItemInList: 46
-    itemAttributes: []
-  - itemName: 4850204472696e6b
-    itemID: 6
-    itemDesc: 2b203130204865616c7468
-    itemIcon: {fileID: 21300000, guid: 6dc5762501dd2df4da399f6c16a85907, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 5
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 47
-    itemAttributes: []
-  - itemName: 4850204472696e6b
-    itemID: 6
-    itemDesc: 2b203130204865616c7468
-    itemIcon: {fileID: 21300000, guid: 6dc5762501dd2df4da399f6c16a85907, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 5
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 48
-    itemAttributes: []
-  - itemName: 4850204472696e6b
-    itemID: 6
-    itemDesc: 2b203130204865616c7468
-    itemIcon: {fileID: 21300000, guid: 6dc5762501dd2df4da399f6c16a85907, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 5
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 49
-    itemAttributes: []
-  - itemName: 4850
-    itemID: 7
-    itemDesc: 2b3130204865616c7468
-    itemIcon: {fileID: 21300000, guid: 98098aa1ea4ae684d87b3c8eeb3d8f98, type: 3}
-    itemModel: {fileID: 0}
-    itemValue: 5
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 50
-    itemAttributes: []
-  - itemName: 4850
-    itemID: 7
-    itemDesc: 2b3130204865616c7468
-    itemIcon: {fileID: 21300000, guid: 98098aa1ea4ae684d87b3c8eeb3d8f98, type: 3}
-    itemModel: {fileID: 0}
-    itemValue: 5
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 51
-    itemAttributes: []
-  - itemName: 4170706c65
-    itemID: 8
-    itemDesc: 2b3130204865616c7468
-    itemIcon: {fileID: 21300000, guid: a4d3f378d1a88f346af15ee906321f2a, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 5
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 52
-    itemAttributes: []
-  - itemName: 4170706c65
-    itemID: 8
-    itemDesc: 2b3130204865616c7468
-    itemIcon: {fileID: 21300000, guid: a4d3f378d1a88f346af15ee906321f2a, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 5
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 53
-    itemAttributes: []
-  - itemName: 4170706c65
-    itemID: 8
-    itemDesc: 2b3130204865616c7468
-    itemIcon: {fileID: 21300000, guid: a4d3f378d1a88f346af15ee906321f2a, type: 3}
-    itemModel: {fileID: 100000, guid: 40da790cc27843b45b9c255c8d996b43, type: 2}
-    itemValue: 5
-    itemType: 2
-    itemWeight: 0
-    maxStack: 5
-    indexItemInList: 54
-    itemAttributes: []
+  ItemsInInventory: []
   height: 3
   width: 3
   stackable: 1
@@ -1596,10 +991,10 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 22471410}
   m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -1614,10 +1009,10 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 22471410}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -1632,10 +1027,10 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 22471410}
   m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -1650,10 +1045,10 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 22471410}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -1668,10 +1063,10 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 22471410}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -1686,10 +1081,10 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 22471410}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -1704,10 +1099,10 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 22471410}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -1722,10 +1117,10 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 22471410}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -1740,10 +1135,10 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 22471410}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -1758,7 +1153,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 22471408}
   - {fileID: 22471406}
@@ -1771,6 +1165,7 @@ RectTransform:
   - {fileID: 22471392}
   m_Father: {fileID: 22471414}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -1785,10 +1180,10 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 22471414}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0.0000030994415, y: 18.5}
@@ -1803,7 +1198,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 22471412}
   - {fileID: 22471410}
@@ -1813,6 +1207,7 @@ RectTransform:
   - {fileID: 22471420}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -54}
@@ -1827,10 +1222,10 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 22471414}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 113, y: 53}
@@ -1845,10 +1240,10 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 22471414}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -51, y: -100}
@@ -1863,10 +1258,10 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 22471414}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 52, y: -100}
@@ -1881,10 +1276,10 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 22479142}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 76.4, y: -7.2}
@@ -1899,14 +1294,14 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 22479140}
   m_Father: {fileID: 22471414}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 92.7, y: 140.95}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 15, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &100100000

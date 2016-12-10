@@ -3,7 +3,7 @@ using System.Collections;
 
 namespace TheLongOrbit
 {
-    [CreateAssetMenu(fileName = "NewShipType", menuName = "Long Orbit/Ship Type", order = 50)]
+    [CreateAssetMenu(fileName = "NewShipType", menuName = "Long Orbit/Ship Type", order = 0)]
     public class ShipType : ScriptableObject
     {
         [Header ("Ship Info")]
