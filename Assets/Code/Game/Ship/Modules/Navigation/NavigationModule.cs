@@ -26,6 +26,8 @@ namespace TheLongOrbit
         private float headingErrorTolerance = 1f;
         [SerializeField]
         private int tooltipPriority = 3;
+        [SerializeField]
+        private bool supressTooltip = false;
 
         [Header("Locations")]
         [ReadOnly]
@@ -51,9 +53,6 @@ namespace TheLongOrbit
         [ReadOnly]
         [SerializeField]
         private Vector3 movementVector;
-
-
-
 
         [HideInInspector]
         public IdleState idleState;
@@ -267,6 +266,11 @@ namespace TheLongOrbit
         public int GetPriority()
         {
             return tooltipPriority;
+        }
+
+        public bool IsSupressed()
+        {
+            return supressTooltip;
         }
 
         #endregion

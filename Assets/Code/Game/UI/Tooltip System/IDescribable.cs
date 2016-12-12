@@ -8,6 +8,7 @@ namespace TheLongOrbit
     {
         string GetRichTextBasicInfo();
         int GetPriority();
+        bool IsSupressed();
     }
 
 }

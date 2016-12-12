@@ -14,6 +14,8 @@ namespace TheLongOrbit
         private Ship playerShip;
         [SerializeField]
         private int tooltipPriority = 1;
+        [SerializeField]
+        private bool supressTooltip = false;
 
         [Header("Navigation")]
         [ReadOnly]
@@ -84,6 +86,11 @@ namespace TheLongOrbit
         public string GetObjectName()
         {
             return captainName;
+        }
+
+        public bool IsSupressed()
+        {
+            return supressTooltip;
         }
     }
 }

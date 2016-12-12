@@ -8,8 +8,10 @@ namespace TheLongOrbit
     [CreateAssetMenu(fileName = "NewUIStyle", menuName = "Long Orbit/UI/UI Style", order = 0)]
     public class UIStyle : ScriptableObject
     {
-        [Header("Panel Style")]
-        public Color PanelColor = Color.black;
+        [Header("Tooltip Panel Style")]
+        public Color TooltipPanelColor = Color.black;
+        public float TooltipOffset = 5f;
+        public float TooltipWidth = 220f;
 
         [Header("Text Styles")]
         public TextStyle Heading;

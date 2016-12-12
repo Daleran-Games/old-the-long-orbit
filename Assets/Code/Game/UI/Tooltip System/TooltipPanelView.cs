@@ -12,10 +12,7 @@ namespace TheLongOrbit
         [Header("Tooltip Panel Settings")]
         [SerializeField]
         private GameObject textPrefab;
-        [SerializeField]
-        private float offset;
-        [SerializeField]
-        private float width;
+
 
         [Header("Tooltip Components")]
         [ReadOnly]
@@ -27,7 +24,6 @@ namespace TheLongOrbit
         [ReadOnly]
         [SerializeField]
         private RectTransform canvasRect;
-
 
         private List<TextLinkEntry> textLinks = new List<TextLinkEntry>();
 
@@ -41,7 +37,9 @@ namespace TheLongOrbit
         // Use this for initialization
         void Start()
         {
-            panelBackground.color = UIManager.Instance.Style.PanelColor;
+            panelBackground.color = UIManager.Instance.Style.TooltipPanelColor;
+            thisRect.sizeDelta = new Vector2(UIManager.Instance.Style.TooltipWidth, 0f);
+            
         }
 
         // Update is called once per frame
@@ -54,9 +52,18 @@ namespace TheLongOrbit
         {
             gameObject.SetActive(true);
             InstantiateTextEntries(tooltip);
-            MoveRectWithOffset(Camera.main.WorldToCanvasPoint(canvasRect,tooltip.transform.position));
-            UpdateTextEntries();
+            Canvas.ForceUpdateCanvases();
 
+            if (tooltip.TooltipMode == ShowTooltip.TooltipType.Game)
+            {
+                MoveToCanvasPoint(Camera.main.WorldToCanvasPoint(canvasRect, tooltip.transform.position), tooltip);
+            }               
+            else
+            {
+                RectTransform objRect = tooltip.gameObject.GetRequiredComponent<RectTransform>();
+                MoveToCanvasPoint(objRect.rect.center + (Vector2)objRect.position, tooltip);           
+            }
+                
         }
 
         public void Hide()
@@ -80,11 +87,13 @@ namespace TheLongOrbit
 
             foreach (IDescribable des in query)
             {
-                GameObject newObj = Instantiate(textPrefab, transform);
-                Text newText = newObj.GetRequiredComponent<Text>();
-                newText.text = des.GetRichTextBasicInfo();
-                textLinks.Add(new TextLinkEntry(des.GetPriority(), des, newText));
-                Debug.Log(newText.text);
+                if(!des.IsSupressed())
+                {
+                    GameObject newObj = Instantiate(textPrefab, transform);
+                    Text newText = newObj.GetRequiredComponent<Text>();
+                    newText.text = des.GetRichTextBasicInfo();
+                    textLinks.Add(new TextLinkEntry(des.GetPriority(), des, newText));
+                }
             }
 
         }
@@ -100,10 +109,37 @@ namespace TheLongOrbit
             }
         }
 
-        void MoveRectWithOffset(Vector2 newPosition)
+        void MoveToCanvasPoint(Vector2 newPosition, ShowTooltip tooltip)
         {
-            thisRect.position = newPosition + new Vector2 (offset, -offset);
+            Vector2 centerCanvasPoint = canvasRect.sizeDelta * 0.5f;
+
+            //Bottom right of canvas
+            if (newPosition.x >= centerCanvasPoint.x && newPosition.y <= centerCanvasPoint.y)
+            {
+                thisRect.SetRectTransformAnchorsAndPivot(Vector2.right, Vector2.right, Vector2.right);
+                thisRect.position = newPosition;
+            }
+            //Top right of canvas
+            else if (newPosition.x >= centerCanvasPoint.x && newPosition.y > centerCanvasPoint.y)
+            {
+                thisRect.SetRectTransformAnchorsAndPivot(Vector2.one, Vector2.one, Vector2.one);
+                thisRect.position = newPosition;
+            }
+            //Bottom left of canvas
+            else if (newPosition.x < centerCanvasPoint.x && newPosition.y <= centerCanvasPoint.y)
+            {
+                thisRect.SetRectTransformAnchorsAndPivot(Vector2.zero, Vector2.zero, Vector2.zero);
+                thisRect.position = newPosition;
+            }
+            //Top left of canvas
+            else
+            {
+                thisRect.SetRectTransformAnchorsAndPivot(Vector2.up, Vector2.up, Vector2.up);
+                thisRect.position = newPosition;
+            }
+
         }
+
      
     }
 }

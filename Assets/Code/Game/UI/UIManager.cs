@@ -17,16 +17,11 @@ namespace TheLongOrbit
         private GameObject selectionPanelPrefab;
         [SerializeField]
         private Camera targetingCamera;
-        [ReadOnly]
-        [SerializeField]
-        private bool uiTooltipLock = false;
+
 
 
         private GameObject gameTooltip;
         private TooltipPanelView gameTooltipView;
-
-        private GameObject uiTooltip;
-        private TooltipPanelView uiTooltipView;
 
         private GameObject selectionPanel;
         private SelectionPanelView selectionView;
@@ -35,6 +30,8 @@ namespace TheLongOrbit
         {
             InstantiateGameTooltip();
         }
+
+        #region GameTooltip
 
         void InstantiateGameTooltip()
         {
@@ -52,6 +49,8 @@ namespace TheLongOrbit
         {
             gameTooltipView.Hide();
         }
+
+        #endregion
 
 
     }

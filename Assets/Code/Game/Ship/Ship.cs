@@ -15,6 +15,8 @@ namespace TheLongOrbit
         private string shipDescription = "A new ship";
         [SerializeField]
         private int tooltipPriority = 2;
+        [SerializeField]
+        private bool supressTooltip = false;
 
         [Header("Ship Graphics")]
         [SerializeField]
@@ -66,6 +68,11 @@ namespace TheLongOrbit
         public int GetPriority()
         {
             return tooltipPriority;
+        }
+
+        public bool IsSupressed()
+        {
+            return supressTooltip;
         }
     }
 }

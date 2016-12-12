@@ -12,8 +12,10 @@ namespace TheLongOrbit
         [SerializeField]
         [TextArea]
         private string description = "Default Location Description";
-          [SerializeField]
+        [SerializeField]
         private int tooltipPriority = 1;
+        [SerializeField]
+        private bool supressTooltip = false;
 
 
         public string GetObjectName()
@@ -32,6 +34,11 @@ namespace TheLongOrbit
         public int GetPriority()
         {
             return tooltipPriority;
+        }
+
+        public bool IsSupressed()
+        {
+            return supressTooltip;
         }
     }
 }

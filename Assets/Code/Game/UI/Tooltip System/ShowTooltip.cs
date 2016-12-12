@@ -15,37 +15,15 @@ namespace TheLongOrbit
         }
 
         public TooltipType TooltipMode = TooltipType.Game;
-        public bool IsShowing = false;
-
-        void Awake()
-        {
-
-        }
 
         public void OnPointerEnter(PointerEventData eventData)
         {
-            if (TooltipMode == TooltipType.Game)
-            {
-                UIManager.Instance.ShowGameTooltip(this);
-            } else if (TooltipMode == TooltipType.UI)
-            {
-                Debug.Log("Not Implemented Yet");
-            }
-            Debug.Log("Pointer Enter Fired!");
-            IsShowing = true;
+            UIManager.Instance.ShowGameTooltip(this);
         }
 
         public void OnPointerExit(PointerEventData eventData)
         {
-            if (TooltipMode == TooltipType.Game)
-            {
-                UIManager.Instance.HideGameTooltip();
-            }
-            else if (TooltipMode == TooltipType.UI)
-            {
-                Debug.Log("Not Implemented Yet");
-            }
-            IsShowing = false;
+            UIManager.Instance.HideGameTooltip();
         }
 
     }

@@ -63,12 +63,7 @@ namespace TheLongOrbit
             transform.position = target.transform.position + offset;
         }
 
-        float GetOrthographicSizeForSprite(SpriteRenderer renderer)
-        {
-            Vector3 maxSpritePoint = renderer.bounds.max;
-            return MathExtensions.GetMaxAbsoluteDimmension(maxSpritePoint);
 
-        }
 
         public void ClearTarget()
         {
@@ -83,7 +78,7 @@ namespace TheLongOrbit
 
             if (targetSpriteRenderer != null)
             {
-                cam.orthographicSize = GetOrthographicSizeForSprite(targetSpriteRenderer);
+                cam.orthographicSize = targetSpriteRenderer.GetMaxDimmensionFromSprite();
             }
             else
             {

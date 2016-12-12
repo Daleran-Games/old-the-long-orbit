@@ -11,7 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41e5eb8869a8e444fb29609ed4b67391, type: 3}
   m_Name: BasicStyle
   m_EditorClassIdentifier: 
-  PanelColor: {r: 0, g: 0, b: 0, a: 0.761}
+  TooltipPanelColor: {r: 0, g: 0, b: 0, a: 0.517}
+  TooltipOffset: 5
+  TooltipWidth: 220
   Heading:
     Bold: 1
     Italics: 0

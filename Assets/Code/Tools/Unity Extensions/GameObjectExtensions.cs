@@ -68,6 +68,31 @@ namespace UnityEngine
             screenPos.y *= canvasRect.rect.height;
             return screenPos;
         }
+
+        public static float GetMaxDimmensionFromSprite(this SpriteRenderer renderer)
+        {
+            Vector3 maxSpritePoint = renderer.bounds.max;
+            return MathExtensions.GetMaxAbsoluteDimmension(maxSpritePoint);
+
+        }
+
+        public static bool IsGameObjectUIObject(this GameObject gameObj)
+        {
+            RectTransform rectTrans = gameObj.GetComponent<RectTransform>();
+
+            if (rectTrans != null)
+                return true;
+            else
+                return false;
+        }
+
+        public static void SetRectTransformAnchorsAndPivot (this RectTransform rectTrans, Vector2 anchorMin, Vector2 anchorMax, Vector2 pivot)
+        {
+            rectTrans.anchorMin = anchorMin;
+            rectTrans.anchorMax = anchorMax;
+            rectTrans.pivot = pivot;
+        }
+
     }
 }
 
