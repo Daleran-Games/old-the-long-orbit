@@ -53,6 +53,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 224519930595207028}
+  - component: {fileID: 114725509923835540}
   m_Layer: 5
   m_Name: SelectionPanel
   m_TagString: Untagged
@@ -73,7 +74,7 @@ GameObject:
   - component: {fileID: 114961979602425712}
   - component: {fileID: 114756795871906184}
   m_Layer: 5
-  m_Name: SelectionPanelTooltip
+  m_Name: InfoPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -133,6 +134,24 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114725509923835540
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1173207625915272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c56ee6c956d3b0478b1cf542d13b402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraPanel: {fileID: 1097289301727648}
+  infoPanel: {fileID: 1192788099597214}
+  textPrefab: {fileID: 1630074111234906, guid: 555956597512a0440b656387cfb28a16, type: 2}
+  thisRect: {fileID: 0}
+  canvasRect: {fileID: 0}
+  cameraPanelBackground: {fileID: 0}
+  infoView: {fileID: 0}
 --- !u!114 &114756795871906184
 MonoBehaviour:
   m_ObjectHideFlags: 1

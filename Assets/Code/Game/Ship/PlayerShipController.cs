@@ -23,7 +23,6 @@ namespace TheLongOrbit
         private NavigationModule navModule;
         [ReadOnly]
         [SerializeField]
-        private string playerTargetText;
         private Selector playerTarget;
         [ReadOnly]
         [SerializeField]
@@ -38,22 +37,13 @@ namespace TheLongOrbit
             playerShip = gameObject.GetRequiredComponent<Ship>();
             navModule = gameObject.GetRequiredComponent<NavigationModule>();
             CommandManager.Instance.OnSelection += PlayerTargetSelected;
-            CommandManager.Instance.OnMove += navModule.Move;
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-            if (playerTarget != null)
-                playerTargetText = playerTarget.GetTargetName();
-            else
-                playerTargetText = "";
+            CommandManager.Instance.OnMove += Move;
         }
 
         void OnDestroy()
         {
             CommandManager.Instance.OnSelection -= PlayerTargetSelected;
-            CommandManager.Instance.OnMove += navModule.Move;
+            CommandManager.Instance.OnMove -= Move;
         }
 
         public void PlayerTargetSelected (Selector target)
@@ -62,12 +52,29 @@ namespace TheLongOrbit
             canNavigateToTarget = IsTargetNavigatable(target);
         }
 
+        public void Move(NavBeacon nav)
+        {
+            
+
+            if (canNavigateToTarget)
+            {
+                NavBeacon newLoc = playerTarget.gameObject.GetComponent<NavBeacon>();
+                Debug.Log("Moving to: "+newLoc.GetNavBeaconName());
+                navModule.Move(newLoc);
+            }
+                
+        }
+
         public bool IsTargetNavigatable(Selector target)
         {
             if (target == null)
             {
                 return false;
-            } else
+            } else if (target.gameObject.GetComponent<NavBeacon>() != null)
+            {
+                return true;
+            }
+            else
             {
                 return false;
             }

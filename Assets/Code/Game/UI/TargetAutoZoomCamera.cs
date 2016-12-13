@@ -27,12 +27,7 @@ namespace TheLongOrbit
         // Use this for initialization
         void Start()
         {
-
             CommandManager.Instance.OnSelection += SetTarget;
-            if (CheckIfTargetIsNull())
-            {
-                gameObject.SetActive(false);
-            }
         }
 
         // Update is called once per frame
@@ -63,8 +58,6 @@ namespace TheLongOrbit
             transform.position = target.transform.position + offset;
         }
 
-
-
         public void ClearTarget()
         {
             target = null;
@@ -72,7 +65,6 @@ namespace TheLongOrbit
 
         public void SetTarget(Selector tar)
         {
-            gameObject.SetActive(true);
             target = tar.gameObject;
             targetSpriteRenderer = target.GetComponent<SpriteRenderer>();
 

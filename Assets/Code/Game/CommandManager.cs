@@ -14,6 +14,21 @@ namespace TheLongOrbit
 
         public event CommandHandler<Selector> OnSelection;
         public event CommandHandler<NavBeacon> OnMove;
+
+        public void Select(Selector newSelection)
+        {
+            OnSelection(newSelection);
+        }
+
+        public void Deselect ()
+        {
+            OnSelection(null);
+        }
+
+        public void Move ()
+        {
+            OnMove(null);
+        }
                    
 
     }

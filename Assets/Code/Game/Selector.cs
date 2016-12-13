@@ -1,11 +1,13 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 
 namespace TheLongOrbit
 {
-    public class Selector : MonoBehaviour
+    public class Selector : MonoBehaviour, IPointerDownHandler
     {
 
         [ReadOnly]
@@ -26,6 +28,15 @@ namespace TheLongOrbit
         public string GetTargetName()
         {
             return targetName;
+        }
+
+        public void OnPointerDown(PointerEventData eventData)
+        {
+            if (eventData.button != PointerEventData.InputButton.Left)
+                return;
+
+            UIManager.Instance.ShowSelectionPanel(this);
+            CommandManager.Instance.Select(this);
         }
 
     }

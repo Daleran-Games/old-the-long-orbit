@@ -11,23 +11,23 @@ namespace TheLongOrbit
 
         [Header("Tooltip Panel Settings")]
         [SerializeField]
-        private GameObject textPrefab;
+        protected GameObject textPrefab;
 
 
         [Header("Tooltip Components")]
         [ReadOnly]
         [SerializeField]
-        private RectTransform thisRect;
+        protected RectTransform thisRect;
         [ReadOnly]
         [SerializeField]
-        private Image panelBackground;
+        protected Image panelBackground;
         [ReadOnly]
         [SerializeField]
-        private RectTransform canvasRect;
+        protected RectTransform canvasRect;
 
-        private List<TextLinkEntry> textLinks = new List<TextLinkEntry>();
+        protected List<TextLinkEntry> textLinks = new List<TextLinkEntry>();
 
-        void Awake()
+        protected void Awake()
         {
             thisRect = gameObject.GetRequiredComponent<RectTransform>();
             canvasRect = transform.root.GetComponent<RectTransform>();
@@ -35,7 +35,7 @@ namespace TheLongOrbit
         }
 
         // Use this for initialization
-        void Start()
+        protected void Start()
         {
             panelBackground.color = UIManager.Instance.Style.TooltipPanelColor;
             thisRect.sizeDelta = new Vector2(UIManager.Instance.Style.TooltipWidth, 0f);
@@ -43,12 +43,12 @@ namespace TheLongOrbit
         }
 
         // Update is called once per frame
-        void Update()
+        protected void Update()
         {
             UpdateTextEntries();
         }
 
-        public void Show(ShowTooltip tooltip)
+        public virtual void Show(ShowTooltip tooltip)
         {
             gameObject.SetActive(true);
             InstantiateTextEntries(tooltip);
@@ -66,20 +66,20 @@ namespace TheLongOrbit
                 
         }
 
-        public void Hide()
+        public virtual void Hide()
         {
 
             ClearTextEntries();
             gameObject.SetActive(false);
         }
 
-        void ClearTextEntries()
+        protected virtual void ClearTextEntries()
         {
             textLinks.Clear();
             thisRect.ClearChildren();
         }
 
-        void InstantiateTextEntries(ShowTooltip tooltip)
+        protected virtual void InstantiateTextEntries(ShowTooltip tooltip)
         {
 
             List<IDescribable> comps = tooltip.GetComponents<IDescribable>().ToList();
@@ -97,8 +97,8 @@ namespace TheLongOrbit
             }
 
         }
-        
-        void UpdateTextEntries()
+
+        protected virtual void UpdateTextEntries()
         {
             if (gameObject.activeInHierarchy == true && textLinks.Count > 0)
             {
@@ -109,7 +109,7 @@ namespace TheLongOrbit
             }
         }
 
-        void MoveToCanvasPoint(Vector2 newPosition, ShowTooltip tooltip)
+        protected virtual void MoveToCanvasPoint(Vector2 newPosition, ShowTooltip tooltip)
         {
             Vector2 centerCanvasPoint = canvasRect.sizeDelta * 0.5f;
 

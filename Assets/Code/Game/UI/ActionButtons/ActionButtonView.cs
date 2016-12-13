@@ -18,12 +18,19 @@ namespace TheLongOrbit
         private int tooltipPriority = 0;
         [SerializeField]
         private bool supressTooltip = false;
+        [ReadOnly]
+        [SerializeField]
+        private Selector currentSelection;
+        [ReadOnly]
+        [SerializeField]
+        private Button launchButton;
 
         private Text buttonLabel;
 
         void Awake()
         {
             buttonLabel = GetComponentInChildren<Text>();
+            launchButton = GetComponent<Button>();
         }
         // Use this for initialization
         void Start()
@@ -32,6 +39,23 @@ namespace TheLongOrbit
             {
                 buttonLabel.text = buttonTitle;
             }
+
+            CommandManager.Instance.OnSelection += PlayerTargetSelected;
+
+        }
+
+        void OnDestroy()
+        {
+            CommandManager.Instance.OnSelection -= PlayerTargetSelected;
+        }
+
+        public void PlayerTargetSelected(Selector target)
+        {
+            currentSelection = target;
+            if (target.GetComponent<NavBeacon>() != null)
+                launchButton.interactable = true;
+            else
+                launchButton.interactable = false;
         }
 
         public int GetPriority()

@@ -23,12 +23,14 @@ namespace TheLongOrbit
         private GameObject gameTooltip;
         private TooltipPanelView gameTooltipView;
 
+        [SerializeField]
         private GameObject selectionPanel;
         private SelectionPanelView selectionView;
 
         void Start ()
         {
             InstantiateGameTooltip();
+            InstantiateSelectionPanel();
         }
 
         #region GameTooltip
@@ -52,6 +54,25 @@ namespace TheLongOrbit
 
         #endregion
 
+        #region SelectionPanel
+        void InstantiateSelectionPanel()
+        {
+            selectionView = selectionPanel.GetRequiredComponent<SelectionPanelView>();
+            selectionPanel.SetActive(false);
+        }
+
+        public void ShowSelectionPanel(Selector selection)
+        {
+            HideSelectionPanel();
+            selectionView.Show(selection);
+        }
+
+        public void HideSelectionPanel()
+        {
+            selectionView.Hide();
+        }
+
+        #endregion
 
     }
 

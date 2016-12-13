@@ -105,6 +105,7 @@ GameObject:
   - component: {fileID: 39355625}
   - component: {fileID: 39355626}
   - component: {fileID: 39355623}
+  - component: {fileID: 39355627}
   m_Layer: 0
   m_Name: Moon
   m_TagString: Untagged
@@ -206,7 +207,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetName: Moon
-  description: The Moon is Earth's only permanent natural satellite.
+  description: The Moon is Earth's only permanent natural satellite. It is the fifth-largest
+    natural satellite in the Solar System, and the largest among planetary satellites
+    relative to the size of the planet that it orbits (its primary). It is the second-densest
+    satellite among those whose densities are known (after Jupiter's satellite Io).
   tooltipPriority: 1
   supressTooltip: 0
 --- !u!114 &39355625
@@ -234,6 +238,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TooltipMode: 0
+--- !u!114 &39355627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 39355619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36fbe404457d1134981ef44caeb62fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetName: No Name Assigned
 --- !u!1 &54211598
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,6 +264,7 @@ GameObject:
   - component: {fileID: 54211603}
   - component: {fileID: 54211602}
   - component: {fileID: 54211605}
+  - component: {fileID: 54211606}
   m_Layer: 0
   m_Name: Venus
   m_TagString: Untagged
@@ -354,7 +371,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetName: Venus
-  description: A high pressure and dangerous planet.
+  description: Venus is the second planet from the Sun, orbiting it every 224.7 Earth
+    days. It has the longest rotation period (243 days) of any planet in the Solar
+    System and rotates in the opposite direction to most other planets. It has no
+    natural satellite. It is named after the Roman goddess of love and beauty.
   tooltipPriority: 1
   supressTooltip: 0
 --- !u!50 &54211605
@@ -377,6 +397,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &54211606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 54211598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36fbe404457d1134981ef44caeb62fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetName: No Name Assigned
 --- !u!1 &169316608
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,6 +420,9 @@ GameObject:
   - component: {fileID: 169316609}
   - component: {fileID: 169316611}
   - component: {fileID: 169316612}
+  - component: {fileID: 169316615}
+  - component: {fileID: 169316614}
+  - component: {fileID: 169316613}
   m_Layer: 0
   m_Name: Sun
   m_TagString: Untagged
@@ -477,6 +512,48 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &169316613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 169316608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20291fa88096eb748bf72e1c958d7fa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetName: Sun
+  description: 'The Sun is the star at the center of the Solar System. It is a nearly
+    perfect sphere of hot plasma, with internal convective motion that generates a
+    magnetic field via a dynamo process. It is by far the most important source of
+    energy for life on Earth. '
+  tooltipPriority: 1
+  supressTooltip: 0
+--- !u!114 &169316614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 169316608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36fbe404457d1134981ef44caeb62fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetName: No Name Assigned
+--- !u!114 &169316615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 169316608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf1bbf17fe9ea484ba973162f943aa09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TooltipMode: 0
 --- !u!1 &176338202
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,6 +565,10 @@ GameObject:
   - component: {fileID: 176338204}
   - component: {fileID: 176338205}
   - component: {fileID: 176338206}
+  - component: {fileID: 176338210}
+  - component: {fileID: 176338209}
+  - component: {fileID: 176338208}
+  - component: {fileID: 176338207}
   m_Layer: 0
   m_Name: Ceres
   m_TagString: Untagged
@@ -577,6 +658,62 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &176338207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 176338202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf1bbf17fe9ea484ba973162f943aa09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TooltipMode: 0
+--- !u!114 &176338208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 176338202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36fbe404457d1134981ef44caeb62fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetName: No Name Assigned
+--- !u!114 &176338209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 176338202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1239424174dd3740b0757679036de04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitOffset: 0
+  navigationPointName: No Name Assigned
+--- !u!114 &176338210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 176338202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20291fa88096eb748bf72e1c958d7fa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetName: Ceres
+  description: Ceres is the largest object in the asteroid belt that lies between
+    the orbits of Mars and Jupiter. Its diameter is approximately 945 kilometers making
+    it the largest of the minor planets within the orbit of Neptune. The 33rd-largest
+    known body in the Solar System, it is the only dwarf planet within the orbit of
+    Neptune.
+  tooltipPriority: 1
+  supressTooltip: 0
 --- !u!1 &268847804
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,6 +725,10 @@ GameObject:
   - component: {fileID: 268847806}
   - component: {fileID: 268847807}
   - component: {fileID: 268847808}
+  - component: {fileID: 268847812}
+  - component: {fileID: 268847811}
+  - component: {fileID: 268847810}
+  - component: {fileID: 268847809}
   m_Layer: 0
   m_Name: Mars
   m_TagString: Untagged
@@ -677,6 +818,61 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &268847809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 268847804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20291fa88096eb748bf72e1c958d7fa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetName: Mars
+  description: Mars is the fourth planet from the Sun and the second-smallest planet
+    in the Solar System, after Mercury. Named after the Roman god of war, it is often
+    referred to as the "Red Planet" because the iron oxide prevalent on its surface
+    gives it a reddish appearance.
+  tooltipPriority: 1
+  supressTooltip: 0
+--- !u!114 &268847810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 268847804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36fbe404457d1134981ef44caeb62fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetName: No Name Assigned
+--- !u!114 &268847811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 268847804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1239424174dd3740b0757679036de04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitOffset: 0
+  navigationPointName: No Name Assigned
+--- !u!114 &268847812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 268847804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf1bbf17fe9ea484ba973162f943aa09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TooltipMode: 0
 --- !u!1001 &411393068
 Prefab:
   m_ObjectHideFlags: 0
@@ -738,6 +934,7 @@ GameObject:
   - component: {fileID: 479095014}
   - component: {fileID: 479095015}
   - component: {fileID: 479095013}
+  - component: {fileID: 479095016}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Untagged
@@ -869,6 +1066,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TooltipMode: 0
+--- !u!114 &479095016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 479095008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36fbe404457d1134981ef44caeb62fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetName: No Name Assigned
 --- !u!1 &548906892
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,7 +1092,7 @@ GameObject:
   - component: {fileID: 548906898}
   - component: {fileID: 548906897}
   m_Layer: 5
-  m_Name: Button
+  m_Name: LaunchButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -946,7 +1155,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 548906895}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1528357267}
+        m_MethodName: Move
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &548906895
@@ -997,6 +1217,8 @@ MonoBehaviour:
   buttonDescription: Launch the ship towards the designated target.
   tooltipPriority: 0
   supressTooltip: 0
+  currentSelection: {fileID: 0}
+  launchButton: {fileID: 0}
 --- !u!114 &548906898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1009,6 +1231,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TooltipMode: 1
+--- !u!1 &798582486 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1173207625915272, guid: 4abe76e3a4575384bb6485ecb42679b6,
+    type: 2}
+  m_PrefabInternal: {fileID: 918224837}
+--- !u!224 &798582488 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224519930595207028, guid: 4abe76e3a4575384bb6485ecb42679b6,
+    type: 2}
+  m_PrefabInternal: {fileID: 918224837}
 --- !u!1 &910186876
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,6 +1303,111 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &918224837
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1122722086}
+    m_Modifications:
+    - target: {fileID: 224519930595207028, guid: 4abe76e3a4575384bb6485ecb42679b6,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224519930595207028, guid: 4abe76e3a4575384bb6485ecb42679b6,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224519930595207028, guid: 4abe76e3a4575384bb6485ecb42679b6,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224519930595207028, guid: 4abe76e3a4575384bb6485ecb42679b6,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224519930595207028, guid: 4abe76e3a4575384bb6485ecb42679b6,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224519930595207028, guid: 4abe76e3a4575384bb6485ecb42679b6,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224519930595207028, guid: 4abe76e3a4575384bb6485ecb42679b6,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224519930595207028, guid: 4abe76e3a4575384bb6485ecb42679b6,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224519930595207028, guid: 4abe76e3a4575384bb6485ecb42679b6,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224519930595207028, guid: 4abe76e3a4575384bb6485ecb42679b6,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224519930595207028, guid: 4abe76e3a4575384bb6485ecb42679b6,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 224519930595207028, guid: 4abe76e3a4575384bb6485ecb42679b6,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224519930595207028, guid: 4abe76e3a4575384bb6485ecb42679b6,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224519930595207028, guid: 4abe76e3a4575384bb6485ecb42679b6,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224519930595207028, guid: 4abe76e3a4575384bb6485ecb42679b6,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224519930595207028, guid: 4abe76e3a4575384bb6485ecb42679b6,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224519930595207028, guid: 4abe76e3a4575384bb6485ecb42679b6,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224519930595207028, guid: 4abe76e3a4575384bb6485ecb42679b6,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224213854781157516, guid: 4abe76e3a4575384bb6485ecb42679b6,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 4abe76e3a4575384bb6485ecb42679b6, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1072517372
 GameObject:
   m_ObjectHideFlags: 0
@@ -1231,6 +1568,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 548906893}
+  - {fileID: 798582488}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1253,8 +1591,10 @@ MonoBehaviour:
   Style: {fileID: 11400000, guid: 689681c88b9d6c84f8e06f0c7609c1d7, type: 2}
   tooltipPrefab: {fileID: 1723995143622374, guid: a89a0ac3e19fb7947b96621545cc07b9,
     type: 2}
-  selectionPanelPrefab: {fileID: 0}
+  selectionPanelPrefab: {fileID: 1173207625915272, guid: 4abe76e3a4575384bb6485ecb42679b6,
+    type: 2}
   targetingCamera: {fileID: 1462169880}
+  selectionPanel: {fileID: 798582486}
 --- !u!1 &1462169875
 GameObject:
   m_ObjectHideFlags: 0
@@ -1423,6 +1763,10 @@ GameObject:
   - component: {fileID: 1533821926}
   - component: {fileID: 1533821928}
   - component: {fileID: 1533821929}
+  - component: {fileID: 1533821933}
+  - component: {fileID: 1533821932}
+  - component: {fileID: 1533821931}
+  - component: {fileID: 1533821930}
   m_Layer: 0
   m_Name: Mercury
   m_TagString: Untagged
@@ -1512,6 +1856,62 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1533821930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1533821925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf1bbf17fe9ea484ba973162f943aa09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TooltipMode: 0
+--- !u!114 &1533821931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1533821925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36fbe404457d1134981ef44caeb62fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetName: No Name Assigned
+--- !u!114 &1533821932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1533821925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1239424174dd3740b0757679036de04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitOffset: 0
+  navigationPointName: No Name Assigned
+--- !u!114 &1533821933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1533821925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20291fa88096eb748bf72e1c958d7fa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetName: Mercury
+  description: Mercury is the smallest and innermost planet in the Solar System. Its
+    orbital period (about 88 Earth days) is less than any other planet in the Solar
+    System. Seen from Earth, it appears to move around its orbit in about 116 days.
+    It has no known natural satellites. It is named after the Roman deity Mercury,
+    the messenger to the gods.
+  tooltipPriority: 1
+  supressTooltip: 0
 --- !u!1 &1747169668
 GameObject:
   m_ObjectHideFlags: 0
@@ -1568,7 +1968,7 @@ MonoBehaviour:
   tooltipPriority: 1
   supressTooltip: 0
   navModule: {fileID: 0}
-  playerTargetText: 
+  playerTarget: {fileID: 0}
   canNavigateToTarget: 0
 --- !u!114 &1932362383
 MonoBehaviour:
@@ -1582,6 +1982,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TooltipMode: 0
+--- !u!114 &1932362384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1932362375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36fbe404457d1134981ef44caeb62fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetName: No Name Assigned
 --- !u!1 &1939456363
 GameObject:
   m_ObjectHideFlags: 0
@@ -1701,3 +2113,23 @@ MonoBehaviour:
   m_EventMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!1 &1962099893 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1192788099597214, guid: 4abe76e3a4575384bb6485ecb42679b6,
+    type: 2}
+  m_PrefabInternal: {fileID: 918224837}
+--- !u!114 &1962099899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1962099893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b79324205a5f0964aa8628279b6d0313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textPrefab: {fileID: 1630074111234906, guid: 555956597512a0440b656387cfb28a16, type: 2}
+  thisRect: {fileID: 0}
+  panelBackground: {fileID: 0}
+  canvasRect: {fileID: 0}
