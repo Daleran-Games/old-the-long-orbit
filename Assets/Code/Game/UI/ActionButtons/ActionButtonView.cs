@@ -11,13 +11,16 @@ namespace TheLongOrbit
 
         [SerializeField]
         private string buttonTitle = "NewActionButton";
+        public string Name { get { return buttonTitle; } }
         [SerializeField]
         [TextArea]
         private string buttonDescription = "Action Description";
         [SerializeField]
         private int tooltipPriority = 0;
+        public int TooltipPriority { get { return tooltipPriority; } }
         [SerializeField]
         private bool supressTooltip = false;
+        public bool IsTooltipSuppressed { get { return supressTooltip; } }
         [ReadOnly]
         [SerializeField]
         private Selector currentSelection;
@@ -26,11 +29,13 @@ namespace TheLongOrbit
         private Button launchButton;
 
         private Text buttonLabel;
+        private NavigationModule playerNavMod;
 
         void Awake()
         {
             buttonLabel = GetComponentInChildren<Text>();
             launchButton = GetComponent<Button>();
+            playerNavMod = GameObject.FindGameObjectWithTag("Player").GetComponent<NavigationModule>();
         }
         // Use this for initialization
         void Start()
@@ -58,11 +63,6 @@ namespace TheLongOrbit
                 launchButton.interactable = false;
         }
 
-        public int GetPriority()
-        {
-            return tooltipPriority;
-        }
-
         public string GetRichTextBasicInfo()
         {
             string head = UIManager.Instance.Style.Heading.ApplyTextSyle(buttonTitle);
@@ -71,15 +71,6 @@ namespace TheLongOrbit
             return head + Environment.NewLine + foot;
         }
 
-        public string GetObjectName()
-        {
-            return buttonTitle;
-        }
-
-        public bool IsSupressed()
-        {
-            return supressTooltip;
-        }
     }
 }
 

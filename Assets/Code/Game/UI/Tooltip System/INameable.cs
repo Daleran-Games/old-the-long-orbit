@@ -6,7 +6,7 @@ namespace TheLongOrbit
 {
     public interface INameable
     {
-        string GetObjectName();
+        string Name { get; }
     }
 
 }

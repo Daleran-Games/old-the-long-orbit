@@ -16,7 +16,8 @@ namespace TheLongOrbit
 
         public override void Enter()
         {
-            navModule.SetDestination(null);
+            //Debug.Log("Starting Idle State");
+            
         }
 
         public override void Navigate()
@@ -26,13 +27,14 @@ namespace TheLongOrbit
 
         public override void Exit()
         {
-            navModule.ChangeState(navModule.initialManeuverState);
+            navModule.ChangeState(navModule.InitialManeuver);
+            //Debug.Log("Exiting Idle State");
         }
 
         public override string GetStateDescription()
         {
-            if (navModule.GetCurrentLocation() != null)
-                return "Idling near " + navModule.GetCurrentLocation().GetNavBeaconName() + ".";
+            if (navModule.CurrentLocation != null)
+                return "Idling near " + navModule.CurrentLocation.Name + ".";
             else
                 return "ERROR: Idling near no location";
         }

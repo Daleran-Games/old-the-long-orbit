@@ -7,10 +7,6 @@ namespace TheLongOrbit
     [System.Serializable]
     public abstract class NavigationState 
     {
-
-        public delegate void OnCompleteEvent();
-        public event OnCompleteEvent OnComplete;
-
         protected NavigationModule navModule;
 
         public abstract void Enter();
@@ -18,7 +14,6 @@ namespace TheLongOrbit
         public abstract void Exit();
 
         public abstract string GetStateDescription();
-
 
     }
 

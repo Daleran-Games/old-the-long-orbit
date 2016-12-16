@@ -13,6 +13,7 @@ namespace TheLongOrbit
         [ReadOnly]
         [SerializeField]
         private string targetName = "No Name Assigned";
+        public string TargetName { get { return targetName; } }
 
         public Vector3 GetLocationPosition()
         {
@@ -22,12 +23,7 @@ namespace TheLongOrbit
         // Use this for initialization
         void Start()
         {
-            targetName = gameObject.GetComponent<INameable>().GetObjectName();
-        }
-
-        public string GetTargetName()
-        {
-            return targetName;
+            targetName = gameObject.GetComponent<INameable>().Name;
         }
 
         public void OnPointerDown(PointerEventData eventData)

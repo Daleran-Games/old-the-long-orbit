@@ -9,51 +9,52 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1000013840307220}
+  m_RootGameObject: {fileID: 1802823453101908}
   m_IsPrefabParent: 1
---- !u!1 &1000013840307220
+--- !u!1 &1802823453101908
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4000011867190086}
-  - component: {fileID: 212000010275982998}
-  - component: {fileID: 60000012780531368}
-  - component: {fileID: 114000013916156244}
-  - component: {fileID: 50974938262968552}
-  - component: {fileID: 114360615533733952}
+  - component: {fileID: 4260227664898170}
+  - component: {fileID: 212160552974455462}
+  - component: {fileID: 58718465575105492}
+  - component: {fileID: 50158031527702618}
+  - component: {fileID: 114059777719628810}
+  - component: {fileID: 114433070444549808}
+  - component: {fileID: 114663213501031096}
   m_Layer: 0
-  m_Name: PlayerShip
-  m_TagString: Player
+  m_Name: Sun
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4000011867190086
+--- !u!4 &4260227664898170
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013840307220}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1496, y: 52, z: 0}
+  m_GameObject: {fileID: 1802823453101908}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50974938262968552
+--- !u!50 &50158031527702618
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013840307220}
+  m_GameObject: {fileID: 1802823453101908}
   m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 1
+  m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
@@ -64,79 +65,68 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!60 &60000012780531368
-PolygonCollider2D:
+--- !u!58 &58718465575105492
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013840307220}
+  m_GameObject: {fileID: 1802823453101908}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: 10.90625, y: 12.994518}
-      - {x: -22.631592, y: 12.492794}
-      - {x: -22.610596, y: 4.5969467}
-      - {x: -27.873291, y: 4.399494}
-      - {x: -27.963257, y: -4.5563126}
-      - {x: -22.632568, y: -4.4942017}
-      - {x: -22.53418, y: -13.050465}
-      - {x: 10.839478, y: -12.832611}
-      - {x: 19.923584, y: -7.605377}
-      - {x: 28.305542, y: -3.0947342}
-      - {x: 28.280884, y: 3.855053}
-      - {x: 19.659302, y: 8.010086}
---- !u!114 &114000013916156244
+  serializedVersion: 2
+  m_Radius: 512
+--- !u!114 &114059777719628810
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013840307220}
+  m_GameObject: {fileID: 1802823453101908}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8b011883de77a0448af2a3393365225, type: 3}
+  m_Script: {fileID: 11500000, guid: cf1bbf17fe9ea484ba973162f943aa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  captainName: Daleran
-  shipName: Tortise
-  shipDescription: This is a simple ship.
-  ExteriorView: {fileID: 21300000, guid: 2ffb30713e2a2bc4fbd50296008b740b, type: 3}
-  InteriorView: {fileID: 21300000, guid: fbfa71f936b36264684462cf7af8d107, type: 3}
-  shipRenderer: {fileID: 0}
-  shipCollider: {fileID: 0}
---- !u!114 &114360615533733952
+  TooltipMode: 0
+--- !u!114 &114433070444549808
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013840307220}
+  m_GameObject: {fileID: 1802823453101908}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9eb90ec071ecdc047b9ba8ec4d01e329, type: 3}
+  m_Script: {fileID: 11500000, guid: 36fbe404457d1134981ef44caeb62fc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  turningSpeed: 1
-  acceleration: 0
-  maxAcceleration: 5
-  positionErrorTolerance: 2
-  headingErrorTolerance: 1
-  currentLocationText: 
-  destinationText: 
-  distanceToDestination: 0
-  navRigidBody: {fileID: 0}
-  movementVector: {x: 0, y: 0, z: 0}
-  stateText: 
---- !u!212 &212000010275982998
+  targetName: No Name Assigned
+--- !u!114 &114663213501031096
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1802823453101908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20291fa88096eb748bf72e1c958d7fa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetName: Sun
+  description: 'The Sun is the star at the center of the Solar System. It is a nearly
+    perfect sphere of hot plasma, with internal convective motion that generates a
+    magnetic field via a dynamo process. It is by far the most important source of
+    energy for life on Earth. '
+  tooltipPriority: 1
+  supressTooltip: 0
+--- !u!212 &212160552974455462
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013840307220}
+  m_GameObject: {fileID: 1802823453101908}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -144,7 +134,7 @@ SpriteRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 78d84bec539fe0944ab7672a486e71ea, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -160,9 +150,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -230017235
-  m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 2ffb30713e2a2bc4fbd50296008b740b, type: 3}
+  m_SortingLayerID: -2081879831
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 8103fe1c3a2d95743921d1044a4361d5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

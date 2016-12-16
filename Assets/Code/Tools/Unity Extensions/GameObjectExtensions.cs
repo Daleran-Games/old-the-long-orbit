@@ -93,6 +93,16 @@ namespace UnityEngine
             rectTrans.pivot = pivot;
         }
 
+        public static Vector3 VectorToPoint(this Transform trans, Vector3 point)
+        {
+            return point - trans.position;
+        }
+
+        public static float DistanceToPoint(this Transform trans, Vector3 point)
+        {
+            return trans.VectorToPoint(point).magnitude;
+        }
+
     }
 }
 

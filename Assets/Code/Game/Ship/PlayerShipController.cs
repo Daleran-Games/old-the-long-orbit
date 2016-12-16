@@ -9,13 +9,16 @@ namespace TheLongOrbit
         [Header("Captain Info")]
         [SerializeField]
         private string captainName = "NewCaptain";
+        public string Name { get { return captainName; } }
         [ReadOnly]
         [SerializeField]
         private Ship playerShip;
         [SerializeField]
         private int tooltipPriority = 1;
+        public int TooltipPriority { get {return tooltipPriority; } }
         [SerializeField]
         private bool supressTooltip = false;
+        public bool IsTooltipSuppressed { get { return supressTooltip; } }
 
         [Header("Navigation")]
         [ReadOnly]
@@ -27,8 +30,6 @@ namespace TheLongOrbit
         [ReadOnly]
         [SerializeField]
         private bool canNavigateToTarget = false;
-
-        
 
 
         // Use this for initialization
@@ -54,12 +55,11 @@ namespace TheLongOrbit
 
         public void Move(NavBeacon nav)
         {
-            
 
             if (canNavigateToTarget)
             {
                 NavBeacon newLoc = playerTarget.gameObject.GetComponent<NavBeacon>();
-                Debug.Log("Moving to: "+newLoc.GetNavBeaconName());
+                Debug.Log("Moving to: "+newLoc.Name);
                 navModule.Move(newLoc);
             }
                 
@@ -67,10 +67,12 @@ namespace TheLongOrbit
 
         public bool IsTargetNavigatable(Selector target)
         {
+            NavBeacon nav = target.gameObject.GetComponent<NavBeacon>();
+
             if (target == null)
             {
                 return false;
-            } else if (target.gameObject.GetComponent<NavBeacon>() != null)
+            } else if (nav != null && nav != navModule.CurrentLocation)
             {
                 return true;
             }
@@ -85,19 +87,5 @@ namespace TheLongOrbit
             return UIManager.Instance.Style.Heading.ApplyTextSyle(captainName);
         }
 
-        public int GetPriority()
-        {
-            return tooltipPriority;
-        }
-
-        public string GetObjectName()
-        {
-            return captainName;
-        }
-
-        public bool IsSupressed()
-        {
-            return supressTooltip;
-        }
     }
 }

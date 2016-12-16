@@ -83,16 +83,16 @@ namespace TheLongOrbit
         {
 
             List<IDescribable> comps = tooltip.GetComponents<IDescribable>().ToList();
-            IEnumerable<IDescribable> query = comps.OrderBy(des => des.GetPriority());
+            IEnumerable<IDescribable> query = comps.OrderBy(des => des.TooltipPriority);
 
             foreach (IDescribable des in query)
             {
-                if(!des.IsSupressed())
+                if(!des.IsTooltipSuppressed)
                 {
                     GameObject newObj = Instantiate(textPrefab, transform);
                     Text newText = newObj.GetRequiredComponent<Text>();
                     newText.text = des.GetRichTextBasicInfo();
-                    textLinks.Add(new TextLinkEntry(des.GetPriority(), des, newText));
+                    textLinks.Add(new TextLinkEntry(des.TooltipPriority, des, newText));
                 }
             }
 

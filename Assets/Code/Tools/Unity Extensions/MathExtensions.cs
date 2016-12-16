@@ -38,5 +38,21 @@ namespace UnityEngine
             float[] dims = { Mathf.Abs(vec.x), Mathf.Abs(vec.y), Mathf.Abs(vec.z) };
             return dims.Min();
         }
+
+        /// <summary>
+        /// Solves 2nd degree polynomial functions in standard form (ax^2 + bx + c = 0) using the quadratic formula x=(-b +- sqrt(b^2 - 4ac))/2a.
+        /// </summary>
+        /// <param name="a">The constant in front of the x^2.</param>
+        /// <param name="b">the constant in front of the x.</param>
+        /// <param name="c">The constant at the end of a standard form polynomial.</param>
+        /// <returns>Returns a length 2 float array with both roots of the polynomial. The first root is the addition part of the quadratic and the second root is the subtraction.</returns>
+        public static float[] QuadraticSolver(float a, float b, float c)
+        {
+            float[] roots = new float[2];
+            roots[0] = (-b + Mathf.Sqrt(b * b - 4f * a *c)) / (2f * a);
+            roots[1] = (-b - Mathf.Sqrt(b * b - 4f * a * c)) / (2f * a);
+
+            return roots;
+        }
     }
 }

@@ -7,8 +7,8 @@ namespace TheLongOrbit
     public interface IDescribable
     {
         string GetRichTextBasicInfo();
-        int GetPriority();
-        bool IsSupressed();
+        int TooltipPriority { get; }
+        bool IsTooltipSuppressed { get; }
     }
 
 }

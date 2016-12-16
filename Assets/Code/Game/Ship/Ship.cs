@@ -10,13 +10,16 @@ namespace TheLongOrbit
         [Header("Ship Info")]
         [SerializeField]
         private string shipName = "NewShip";
+        public string Name { get { return shipName; } }
         [TextArea]
         [SerializeField]
         private string shipDescription = "A new ship";
         [SerializeField]
         private int tooltipPriority = 2;
+        public int TooltipPriority { get { return tooltipPriority; } }
         [SerializeField]
         private bool supressTooltip = false;
+        public bool IsTooltipSuppressed {get { return supressTooltip; } }
 
         [Header("Ship Graphics")]
         [SerializeField]
@@ -30,9 +33,6 @@ namespace TheLongOrbit
         [ReadOnly]
         [SerializeField]
         private SpriteRenderer shipRenderer;
-        [ReadOnly]
-        [SerializeField]
-        private Collider2D shipCollider;
 
         void Awake()
         {
@@ -42,19 +42,7 @@ namespace TheLongOrbit
         // Use this for initialization
         void Start()
         {
-            transform.position = GameManager.Instance.StartingPlanet.GetOrbitPosition();
             shipRenderer.sprite = ExteriorView;
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
-
-        public string GetObjectName()
-        {
-            return shipName;
         }
 
         public string GetRichTextBasicInfo()
@@ -63,16 +51,6 @@ namespace TheLongOrbit
             string foot = UIManager.Instance.Style.Footnote.ApplyTextSyle(shipDescription);
 
             return head + Environment.NewLine + foot;
-        }
-
-        public int GetPriority()
-        {
-            return tooltipPriority;
-        }
-
-        public bool IsSupressed()
-        {
-            return supressTooltip;
         }
     }
 }

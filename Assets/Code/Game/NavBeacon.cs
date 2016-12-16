@@ -5,30 +5,27 @@ using UnityEngine;
 
 namespace TheLongOrbit
 {
-    public class NavBeacon : MonoBehaviour
+    public class NavBeacon : MonoBehaviour, INameable
     {
 
         [SerializeField]
-        private float orbitOffset = 0f;
+        private float orbitPosition = 0f;
         [ReadOnly]
         [SerializeField]
         private string navigationPointName = "No Name Assigned";
-
-        public Vector3 GetOrbitPosition()
-        {
-            return transform.position + new Vector3(0f, orbitOffset);
-        }
+        public string Name { get { return navigationPointName; } }
 
         // Use this for initialization
         void Start()
         {
-            navigationPointName = gameObject.GetComponent<INameable>().GetObjectName();
+            navigationPointName = gameObject.GetComponent<INameable>().Name;
         }
 
-        public string GetNavBeaconName()
+        public Vector2 GetOrbitPosition ()
         {
-            return navigationPointName;
+            return transform.position + new Vector3(0f, orbitPosition);
         }
+
     }
 }
 
