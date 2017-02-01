@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06ad8515baa595f439e14df26826acf3, type: 3}
   m_Name: DefaultSettings
   m_EditorClassIdentifier: 
-  positionErrorTolerance: 10
+  positionErrorTolerance: 0.001
   headingErrorTolerance: 1
